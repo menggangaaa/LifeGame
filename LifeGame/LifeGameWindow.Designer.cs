@@ -36,6 +36,9 @@
             this.btnEditGrid = new System.Windows.Forms.Button();
             this.labelCount = new System.Windows.Forms.Label();
             this.gridPanel = new System.Windows.Forms.Panel();
+            this.lifeRadio = new System.Windows.Forms.RadioButton();
+            this.gameType = new System.Windows.Forms.Label();
+            this.lutonRadio = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnStart
@@ -98,7 +101,7 @@
             // labelCount
             // 
             this.labelCount.AutoSize = true;
-            this.labelCount.Location = new System.Drawing.Point(810, 320);
+            this.labelCount.Location = new System.Drawing.Point(810, 400);
             this.labelCount.Name = "labelCount";
             this.labelCount.Size = new System.Drawing.Size(41, 12);
             this.labelCount.TabIndex = 6;
@@ -111,13 +114,45 @@
             this.gridPanel.Name = "gridPanel";
             this.gridPanel.Size = new System.Drawing.Size(801, 801);
             this.gridPanel.TabIndex = 7;
-            this.gridPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.gridPanel_Paint);
+            // 
+            // lifeRadio
+            // 
+            this.lifeRadio.AutoSize = true;
+            this.lifeRadio.Checked = true;
+            this.lifeRadio.Location = new System.Drawing.Point(810, 340);
+            this.lifeRadio.Name = "lifeRadio";
+            this.lifeRadio.Size = new System.Drawing.Size(71, 16);
+            this.lifeRadio.TabIndex = 8;
+            this.lifeRadio.Text = "生命游戏";
+            this.lifeRadio.UseVisualStyleBackColor = true;
+            // 
+            // gameType
+            // 
+            this.gameType.AutoSize = true;
+            this.gameType.Location = new System.Drawing.Point(810, 320);
+            this.gameType.Name = "gameType";
+            this.gameType.Size = new System.Drawing.Size(65, 12);
+            this.gameType.TabIndex = 9;
+            this.gameType.Text = "游戏规则：";
+            // 
+            // lutonRadio
+            // 
+            this.lutonRadio.AutoSize = true;
+            this.lutonRadio.Location = new System.Drawing.Point(810, 360);
+            this.lutonRadio.Name = "lutonRadio";
+            this.lutonRadio.Size = new System.Drawing.Size(71, 16);
+            this.lutonRadio.TabIndex = 10;
+            this.lutonRadio.Text = "兰顿蚂蚁";
+            this.lutonRadio.UseVisualStyleBackColor = false;
             // 
             // LifeGameWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 810);
+            this.Controls.Add(this.lutonRadio);
+            this.Controls.Add(this.gameType);
+            this.Controls.Add(this.lifeRadio);
             this.Controls.Add(this.gridPanel);
             this.Controls.Add(this.labelCount);
             this.Controls.Add(this.btnEditGrid);
@@ -143,6 +178,9 @@
         private System.Windows.Forms.Button btnEditGrid;
         private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.Panel gridPanel;
+        private System.Windows.Forms.RadioButton lifeRadio;
+        private System.Windows.Forms.Label gameType;
+        private System.Windows.Forms.RadioButton lutonRadio;
     }
 }
 
